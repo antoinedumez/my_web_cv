@@ -1,0 +1,432 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Skills{% endblock %}
+
+{% block body %}
+    <script src="skills/sciptGoogle.js" defer></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    {# La recherche #}
+    <div class="d-flex align-items-center mt-3 col-10">
+        {# image #}
+        <div class="mx-3 col-12 " style="width: 100px">
+            <a href="{{ path('app_home') }}">
+
+                <img style="height: 20px;"
+                     class="w-100  center border-dark"
+                     src="{{ asset('/build/images/antoine.png') }}"/>
+            </a>
+        </div>
+        {# champs de recherche #}
+        <div class="d-flex justify-content-between rounded-pill border col-8">
+            <div class=" d-flex align-content-center align-items-center">
+                <p class="fw-light m-3"> Dumez Antoine </p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center me-3">
+                    <i class=" fa-solid fa-xmark"></i>
+                </div>
+
+                <div class=" d-flex align-content-center align-items-center">
+                    <i class="fa-solid fa-magnifying-glass m-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Sorte de navbar #}
+    <div class="container mx-5">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+            <ul class="ulselector nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <a href="#"
+                       data-section="section_formation"
+                       class="nav-link ps-0 pe-2  link-dark border-bottom border-primary">
+                        Formations
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       data-section="section_experiencePro"
+                       class="nav-link px-2 link-dark">
+                        Expériences professionnelles
+                    </a href="#"
+                    >
+                </li>
+                <li>
+                    <a href="#" data-section="section_compétences" class="nav-link px-2 link-dark">
+                        Compétences
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="section_interest" class="nav-link px-2 link-dark">
+                        Centres d'intérêts
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="section_contact" class="nav-link px-2
+                link-dark">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    {# Séparation #}
+    <div class="border-top"></div>
+    {# Corp du content #}
+    <div class="container ms-5 me-0 d-md-flex">
+
+        {# Coté gauche #}
+        <div class="col-md-8">
+            <small class="text-muted ">Environ 3660 résultats (0,41 secondes)</small>
+
+{#            FORMATIONS #}
+            <div class="section " id="section_formation">
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2022 Formation Développeur web - PHP / Symfony
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Wild Code School - Bordeaux. <br>
+                        Formation équivalente à une formation BAC +2, j'ai choisi
+                        l'orientation back-end avec l'apprentissage du langage php et surtout du framework Symfony.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2016 - 2018 CQP + CAP carrosserie - peinture automobile
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        CFA Institut des Métiers de l'Artisanat - Bordeaux. <br>
+                        Formation en alternance qui a débuté chez BMW Mérignac en CAP et c'est terminé par un CQP dans
+                        une carrosserie indépendante.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2012 - 2015 Licence de Biologie
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Université Bordeaux 1 <br>
+                        J'ai passé 3 ans sur les bancs de la faculté de biologie mais j'ai décidé de quitter cet
+                        établissement à cause du manque d'emploies.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2011 Baccalauréat Scientifique - Spécialité Mathématiques
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Lycée Camille Jullian à Bordeaux. <br>
+                    </small>
+                </div>
+            </div>
+
+
+{#            EXPERIENCES PROFESSIONNELS #}
+            <div class="section d-none" id="section_experiencePro">
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2021 – 2022 Zhendre Eiffage
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Peintre industriel<br>
+                        Préparation et peinture sur containers aménagés afin d'acquérir de nouvelles compétences dans le
+                        domaine de la peinture.
+
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2017 – 2020 Premium Carrosserie
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Carrossier peintre<br>
+                        Ouvrier polyvalent dont les missions allaient du démontage des éléments jusqu’à la peinture.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2015 – 2017 BMW Bayern Automobiles
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Apprenti<br>
+                        Apprentissage en carrosserie peinture.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2016 – 2017 La boite à pizza
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Livraison pizzas, gestion de clientèle et préparation de commandes. Travail étudiant en parallèle
+                        de mes études le soir et les week-end.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            2014 – 2015 Adecco
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Employé polyvalent<br>
+                        Multiples missions en vente et logistique en intérim.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Autre
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Divers jobs étudiants (caissier, vendanges et autres..) durant mes études.
+                    </small>
+                </div>
+            </div>
+
+{#           Compétences #}
+            <div class="section d-none" id="section_compétences">
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Soft skills
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Travail en équipe, motivation, adaptation, communication curiosité.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                             Php
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Php procédurale et utilisation du framework Symfony avec la notion de programmation objets.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Autres
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Git/gitHub, notion de Javascript, gestion de base de donnée en sql (mysql, phpMysql), utilisation
+                        de l'ORM Doctrine sur symfony.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Langue
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Anglais : scolaire / professionnel
+                    </small>
+                </div>
+            </div>
+
+{#            centres d'interets #}
+            <div class="section d-none" id="section_interest">
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Voyage
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        J'ai pas mal voyagé à travers l'europe (France, Belgique, Pays-Bas, Italie, Espagne..)
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Travaux / bricolage
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        J'ai toujours aimé bricoler, restaurer des véhicules anciens, des maisons... Et bien d'autres
+                        projets.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Cinéma
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Bien que je ne prenne plus le temps d'aller au cinéma, j'ai toujours adoré passer des soirée dans
+                        l'obscurité des salles.
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <small class="text-dark">https://fakeurl.com > channel</small>
+                    <a class="nav-link p-0" href="">
+                        <h4 class="m-0">
+                            Informatique
+                        </h4>
+                    </a>
+                    <small class="text-dark">
+                        Forcément !
+                    </small>
+                </div>
+            </div>
+            {# Contact #}
+            <div class="section d-none" id="section_contact">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header p-5 pb-2 border-bottom-0">
+                            <!-- <h5 class="modal-title">Modal title</h5> -->
+                            <h2 class="fw-bold mb-0">Pour me contacter </h2>
+                        </div>
+
+                        <div class="modal-body p-5 pt-0">
+                            <small class="text-muted">Vous pouvez me contacter depuis linkedin, par mail ou directement
+                                par téléphone </small>
+
+                            <form class="mt-2 d-flex flex-column row gap-3" data-dashlane-rid="704c8bb15d46052c"
+                                  data-form-type="register">
+
+                                <a href="https://www.linkedin.com/in/antoine-dumez/" class=" col w-100 btn btn-lg
+                            rounded-3 btn-primary">
+                                    Mon linkedin
+                                </a>
+
+                                <div class="col border  border-primary rounded-3 d-flex justify-content-center">
+                                    <h5 class=" my-2">
+                                        dumez.a@outlook.com
+                                    </h5>
+                                </div>
+
+                                <div class="col border  border-primary rounded-3 d-flex justify-content-center">
+                                    <h5 class=" my-2">
+                                        06 34 24 22 87
+                                    </h5>
+                                </div>
+
+                                <hr class="my-4">
+                                <h2 class="fs-5 fw-bold mb-3">Quelques-uns de mes travaux</h2>
+                                <a href="https://github.com/antoinedumez"
+                                   class="w-100 mb-2 btn btn-lg rounded-3 btn btn-outline-dark rounded-3">
+                                    Mon github
+                                </a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {# Coté droit #}
+        <div class="">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <img style="object-fit: cover"
+                         class="w-100  center border-dark"
+                         src="{{ asset('/build/images/magle.jpg') }}"/>
+                    <div class="modal-header d-flex flex-column align-items-start p-1">
+                        <h4 class="fw-bold mb-0">Dumez Antoine</h4>
+                        <small>Développeur back-end</small>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <small> Antoine Dumez, né le 19 mars 1993 à Montauban, est un développeur web junior backend.<br>
+                            Issu du milieu de l'automobile, il a choisi de prendre un virage à 180° afin de se réorienter
+                            dans un domaine qui le passionne depuis toujours. Ses facultés principales sont une grande
+                            motivation et beaucoup d'investissement.
+                        </small>
+                        <p class="fw-bold">
+                            Date/Lieu de naissance :
+                            <small class="fw-normal">
+                                19 mars 1993, Montauban, France
+                            </small>
+                        </p>
+                        <p class="fw-bold">
+                            Taille :
+                            <small class="fw-normal">
+                                1m95 (à 20 cm près)
+                            </small>
+                        </p>
+                        <p class="fw-bold">
+                            Région :
+                            <small class="fw-normal">
+                                Bordeaux
+                            </small>
+                        </p>
+                        <p class="fw-bold">
+                            Age :
+                            <small class="fw-normal">
+                                {{ age }} ans (calculé automatiquement grâce à un algorithme des plus sophistiqué.
+                                Je vous invite à vérifier l'année prochaine !)
+                            </small>
+                        </p>
+                        {#                        <hr class="my-4">#}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

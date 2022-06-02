@@ -1,12 +1,27 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
-
-// any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
-
+import './styles/app.scss';
 // start the Stimulus application
 import './bootstrap';
+
+// Bootstrap JS
+const $ = require('jquery');
+
+import Typewriter from 'typewriter-effect/dist/core';
+
+// ------------- Js type writter
+var app = document.getElementById('jstext');
+
+var typewriter = new Typewriter(app, {
+    loop: false
+});
+
+typewriter.typeString('<strong>motivé !</strong>')
+    .pauseFor(2500)
+    .deleteAll().changeDeleteSpeed(1)
+    .typeString('<strong>motivé !</strong>')
+    .pauseFor(2000)
+    .deleteAll().changeDeleteSpeed(1000)
+    .typeString('<strong>rigoureux!</strong>')
+    .deleteAll()
+    .typeString('<strong>qui aime apprendre !</strong>')
+    .pauseFor(2500)
+    .start();

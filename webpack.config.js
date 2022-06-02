@@ -18,9 +18,15 @@ Encore
      * ENTRY CONFIG
      *
      * Each entry will result in one JavaScript file (e.g. app.js)
-     * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
+     * and one CSS file (e.g. app.scss) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+
+    // .addEntry('cube_js', [
+    //     './assets/cube/js/vendor.bundle.js',
+    //     './assets/cube/js/index.bundle.js'
+    // ])
+    // .addEntry('cube_css', './assets/cube/css/index.bundle.css')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
@@ -56,7 +62,7 @@ Encore
     })
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
@@ -70,6 +76,25 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+
+
+    .copyFiles({
+        from: './assets/images',
+
+// optional target path, relative to the output dir
+        to: 'images/[path][name].[ext]',
+
+// if versioning is enabled, add the file hash too
+//to: 'images/[path][name].[hash:8].[ext]',
+
+// only copy files matching this pattern
+//pattern: /\.(png|jpg|jpeg)$/
+    })
+
+    .copyFiles({
+        from: './assets/video',
+        to: 'video/[path][name].[ext]',
+    });
 ;
 
 module.exports = Encore.getWebpackConfig();
