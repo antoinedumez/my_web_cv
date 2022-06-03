@@ -4,6 +4,7 @@ import './bootstrap';
 
 // Bootstrap JS
 const $ = require('jquery');
+require('bootstrap');
 
 import Typewriter from 'typewriter-effect/dist/core';
 

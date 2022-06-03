@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dumez Antoine" />
+    <meta name="description" content="Une autre manière de partager mon CV en ligne, un peu plus original !" />
+
+    <title>{% block title %}Antoine Dumez!{% endblock %}</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('/build/images/favicon.png') }}" />
+
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" defer crossorigin="anonymous"></script>
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>
