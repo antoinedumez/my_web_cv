@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SkillsController extends AbstractController
 {
-    #[Route('/skills', name: 'app_skills')]
+    #[Route('/skills/', name: 'app_skills')]
     public function index(AgeCalculator $ageCalculator): Response
     {
         $interval = $ageCalculator->ageDifference();
