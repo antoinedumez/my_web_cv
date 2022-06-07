@@ -15,11 +15,11 @@ var typewriter = new Typewriter(app, {
     loop: false
 });
 
-typewriter.typeString('<strong>rigoureux et motivé </strong>')
+typewriter.typeString('<strong>rigoureux</strong>')
     .pauseFor(2000)
     .deleteAll().changeDeleteSpeed(1)
-    // .typeString('<strong>motivé !</strong>')
-    // .pauseFor(2000)
+    .typeString('<strong>motivé !</strong>')
+    .pauseFor(2000)
     .deleteAll().changeDeleteSpeed(1000)
     .typeString('<strong>qui a une belle et grosse moustache </strong>')
     .deleteAll()
