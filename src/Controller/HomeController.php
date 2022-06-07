@@ -13,4 +13,10 @@ class HomeController extends AbstractController
     {
         return $this->render('home/index.html.twig');
     }
+
+    #[Route('/azer')]
+    public function azer(): Response
+    {
+        return new Response("ok");
+    }
 }
